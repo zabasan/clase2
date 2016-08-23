@@ -224,9 +224,97 @@
 				</li>
 			</ul>
 		</div>
-
-
 	</section>
+
+	<section>
+		<table><!-- vamos a hacer una tabla -->
+			<tr>
+				<td>Países</td>
+				<td>Bronce</td>
+				<td>Plata</td>
+				<td>Oro</td>
+			</tr>
+
+			<tr>
+				<td>Argentina</td>
+				<td>5</td>
+				<td>6</td>
+				<td>8</td>
+			</tr>
+
+			<tr>
+				<td>Brasil</td>
+				<td>10</td>
+				<td>8</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>Uruguay</td>
+				<td>9</td>
+				<td>6</td>
+				<td>10</td>
+			</tr>
+
+			<tr>
+				<td>Chile</td>
+				<td>1</td>
+				<td>0</td>
+				<td>3</td>
+			</tr>
+
+			<tr>
+				<td>Jamaica</td>
+				<td>2</td>
+				<td>15</td>
+				<td>20</td>
+			</tr>
+		</table>
+		
+	</section>
+
+<hr/>
+<!-- Formularios -->
+
+	<section>
+		<form method="POST" action="enviar.php">
+			<label for="nombre">Nombre: </label>
+			<input name="nombre" placeholder="ingresar tu nombre" type="text" required>
+			<br/>
+			<label for="correo">Correo</label>
+			<input name="correo" placeholder="ingresa tu e-mail" type="email" required>
+			<br/>
+			<label for="password">Contraseña</label>
+			<input name="password" placeholder="contraseña" type="password" required>
+			<br/>
+			<label for="telefono">Teléfono: </label>
+			<input name="telefono" placeholder="ingresar tu teléfono" type="tel">
+			<br/>
+			<label for="edad">Edad: </label>
+			<input name="edad" placeholder="ingresar tu edad" type="number">
+			<br/>
+			<label for="mensaje">Mensaje: </label>
+			<textarea name="mensaje" placeholder="ingrese su comentario" ></textarea>
+			<br/>
+			<label for="destino">Destino</label>
+			<select name="destino" required>
+				<option value="">Seleccionar Destino</option> <!-- si el value es vacío y en el select pongo required no permite continuar -->
+				<option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+				<option value="BA">Buenos Aires</option>
+				<option value="ER">Entre Ríos</option>
+				<option value="SF">Santa Fe</option>
+			</select>
+			<br/>
+			<input type="radio" name="entrega" value="Delivery"><span>Delivery</span> 
+			<br>
+			<input type="radio" name="entrega" value="Local"><span>Retira por el local</span>
+			<br/>
+			<label for="cv">CV</label>
+			<input type="file" name="cv">
+			<br/>
+			<input type="submit" value="enviar formulario">
+		</form> 
+	</section>	
 
 </body>
 </html>
